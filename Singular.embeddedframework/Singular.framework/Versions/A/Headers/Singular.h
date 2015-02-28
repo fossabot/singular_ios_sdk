@@ -141,12 +141,6 @@
 +(void)trackRevenue:(double)price withProductId:(NSString *)productId withQuantity:(int)quantity currency:(NSString *)currency storeKitTransaction:(SKPaymentTransaction *)transaction;
 
 /**
- * Tracks app launches resulting from deep link. This method should be called from UIApplicationDelegate's didFinishLaunchingWithOptions: and passed the same dictionary.
- * @param options The NSDictionary passed to the UIApplicationDelegate's didFinishLaunchingWithOptions: method.
- */
-+(void)appOpenedWithOptions:(NSDictionary *)options;
-
-/**
  * Tracks app launches resulting from deep link. This method should be called from UIApplicationDelegate's application:openUrl and passed the same arguments.
  * @param url the URL used to open the app
  * @param sourceApplication which application opened the link
@@ -230,5 +224,11 @@
  * enables tracking for this device
  */
 +(void)enableDeviceTracking;
+
+
+/**
+ * enables sandbox mode for tests against singular servers
+ */
++(void)enableSandboxMode;
 
 @end

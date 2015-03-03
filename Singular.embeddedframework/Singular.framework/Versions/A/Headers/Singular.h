@@ -17,8 +17,10 @@
  * Should be called in your UIApplicationDelegate's didFinishLaunchingWithOptions:
  * @param apiKey - your Singular API key
  * @param appId - you Singular App ID
+ * @param sandboxModeEnabled - boolean that specifies whether to enable sandbox mode
  */
 +(void)initializeSingularWithApiKey:(NSString *)apiKey andAppId:(NSString *)appId;
++(void)initializeSingularWithApiKey:(NSString *)apiKey andAppId:(NSString *)appId andSandboxModeEnabled:(BOOL)sandboxModeEnabled;
 
 
 /**

@@ -60,7 +60,8 @@
  *
  * @param eventType The Event type, e.g: 'purchase', 'level-up'
  * @param attributes nil-terminated attributes list. Only the first 5 attributes are accepeted, the rest are ignored
- */+(void)trackEvent:(NSString *)eventType withAttributes:(NSString *)firstAttribute, ... NS_REQUIRES_NIL_TERMINATION;
+ */
++(void)trackEvent:(NSString *)eventType withAttributes:(NSString *)firstAttribute, ... NS_REQUIRES_NIL_TERMINATION;
 
 
 
@@ -216,6 +217,11 @@
  * @param currency - The currency to measure the revenue in. While the currency is an NSString it should belong to the kSingularCurrency* constants.
  */
 +(void)setDefaultCurrency:(NSString *)currency;
+
+/**
+ * Gets the default currency
+ */
++(NSString *)defaultCurrency;
 
 /**
  * disables tracking for this device (for example, in case the user opts-out)

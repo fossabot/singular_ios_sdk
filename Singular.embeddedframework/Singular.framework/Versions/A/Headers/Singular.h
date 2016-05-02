@@ -1,9 +1,6 @@
 //
 //  Singular.h
-//  Singular
-//
-//  Created by Daniel Shein on 1/1/15.
-//  Copyright (c) 2015 Singular Ltd. All rights reserved.
+//  Copyright (c) 2016 Singular All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

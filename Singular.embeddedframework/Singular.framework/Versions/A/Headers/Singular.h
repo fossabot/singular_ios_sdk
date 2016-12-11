@@ -9,6 +9,8 @@
 
 @interface Singular : NSObject
 
+typedef void (^SingularAttributionDataBlock) (NSDictionary *attributionData);
+
 /**
  * Initializes Singular's context. must be called before any other call to the api.
  * Should be called in your UIApplicationDelegate's didFinishLaunchingWithOptions:
@@ -283,5 +285,10 @@
  * enables sandbox mode for tests against singular servers
  */
 +(void)enableSandboxMode;
+
+/**
+ * Retrieve attribution data of current installation
+ */
++(void)attributionDataWithBlock:(SingularAttributionDataBlock)callback;
 
 @end
